@@ -30,7 +30,7 @@ The jump box is configured to allow traffic only from trusted sources, it is use
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system performance.
 
--Filebeat can be used to collect log files and advents such as server logs. Metricbeat can be used to collect metrics such as uptime and CPU usage
+Filebeat can be used to collect log files and advents such as server logs. Metricbeat can be used to collect metrics such as uptime and CPU usage
 
 The configuration details of each machine may be found below.
 
@@ -102,7 +102,5 @@ SSH into the control node and follow the steps below:
  10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbook and navigate to the Elk server and run 'docker ps' to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
 - [install-elk.yml](Ansible/install-elk.yml) is the playbook, copy it to '/etc/ansible/'
 - Navigate to 'http://<ELK.VM.External.IP>:5601/app/kibana' in order to check that the ELK server is running.
